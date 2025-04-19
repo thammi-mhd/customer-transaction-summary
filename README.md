@@ -29,17 +29,24 @@ transactions = [
 
 ## 💡OUTPUT example
 ```python
-(1, 200)
-(1, 300)
-500
-[200, 300]
-(2, 150)
-(2, 50)
-200
-[200, 300, 150, 50]
-(3, 400)
-(3, 100)
-500
-[200, 300, 150, 50, 400, 100]
-the highest amount is with the customer 1  and the amount is 300
+Processing transactions for Customer 1:
+  - Transaction: (1, 200)
+  - Transaction: (1, 300)
+Total amount for Customer 1: 500
+Running total of all transactions processed so far: [500]
+
+Processing transactions for Customer 2:
+  - Transaction: (2, 150)
+  - Transaction: (2, 50)
+Total amount for Customer 2: 200
+Running total of all transactions processed so far: [500, 200]
+
+Processing transactions for Customer 3:
+  - Transaction: (3, 400)
+  - Transaction: (3, 100)
+Total amount for Customer 3: 500
+Running total of all transactions processed so far: [500, 200, 500]
+
+The highest amount is with Customer 1 and the amount is 500
+
 ```
