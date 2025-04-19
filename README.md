@@ -50,3 +50,14 @@ Running total of all transactions processed so far: [500, 200, 500]
 The highest amount is with Customer 1 and the amount is 500
 
 ```
+
+## Output Explanation:
+Processing transactions for Customer X: Shows the beginning of processing for each customer.
+
+Transaction: Lists individual transactions (customer ID and amount).
+
+Total amount for Customer X: Shows the total sum of all transactions for that customer.
+
+Running total of all transactions: Shows the cumulative total across all processed customers.
+
+The highest amount: Finally, it identifies the customer with the highest total transaction amount.
