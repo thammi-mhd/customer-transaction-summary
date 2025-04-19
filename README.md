@@ -27,7 +27,7 @@ transactions = [
 ```
 
 
-OUTPUT example
+## 💡OUTPUT example
 ```python
 (1, 200)
 (1, 300)
