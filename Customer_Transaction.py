@@ -1,22 +1,21 @@
 def calculation_pdct(transaction):
-  length = int(len(transaction)/2)
-  amt_ttl = []
-  for i in range(0,length):
-    sum = 0
-    for j in transaction:
-      if transaction[i][0] == j[0]:
-        sum += j[1]
-        print(j)
-        amt_ttl.append(j[1])
-    print(sum)
-    print(amt_ttl)
-  max_amt = max(amt_ttl)
-  for item in transaction:
-    if item[1] == max_amt:
-      print("the highest amount is with the customer ",item[0]," and the amount is",item[1])    
-    
-
-
+    amt_ttl = []
+    for i in range(0, len(transaction)):
+        sum = 0
+        print(f"\nProcessing transactions for Customer {transaction[i][0]}:")
+        for j in transaction:
+            if transaction[i][0] == j[0]:
+                print(f"  - Transaction: {j}")  # Showing each transaction for this customer
+                sum += j[1]
+        amt_ttl.append(sum)
+        print(f"Total amount for Customer {transaction[i][0]}: {sum}")
+        print(f"Running total of all transactions processed so far: {amt_ttl}")
+  
+    max_amt = max(amt_ttl)
+    for i, item in enumerate(transaction):
+        if amt_ttl[i] == max_amt:
+            print(f"\nThe highest amount is with Customer {item[0]} and the amount is {max_amt}")
+            break
 
 transactions = [
     (1, 200),
