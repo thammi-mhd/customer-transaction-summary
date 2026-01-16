@@ -1,34 +1,46 @@
-# customer-transaction-summary
-A simple Python project that analyzes customer transactions to calculate total spending per customer and identifies the customer with the highest overall transaction total. Great for practicing data analysis using basic Python constructs like loops, conditionals, and tuples.
+Customer Transaction Summary
 
+This is a simple Python project that analyzes customer transactions to calculate the total amount spent by each customer. The program also identifies the customer with the highest overall transaction value.
 
+I created this project to strengthen my understanding of core Python concepts such as loops, conditional logic, tuple handling, and basic data processing.
 
-# Customer Transaction Summary in Python
+Project Overview
 
-This project processes a list of customer transactions to determine the total amount spent by each customer. It also identifies the customer with the highest total transaction amount.
+Processes a list of customer transactions
 
-## 🔧 Features
-- Calculates total transaction amount per customer
-- Identifies and displays the customer with the highest overall transactions
-- Demonstrates nested loops, conditional logic, and tuple handling in Python
+Calculates the total spending for each customer
 
-## 🧠 Technologies Used
-- Python 3.x
+Displays transaction details while processing
 
-## 🧾 Sample Input
-```python
+Identifies the customer with the highest total transaction amount
+
+Concepts Practiced
+
+Nested loops
+
+Conditional statements
+
+Tuples and iteration
+
+Basic aggregation logic
+
+Problem-solving using plain Python
+
+Technologies Used
+
+Python 3.x
+
+Sample Input
 transactions = [
     (1, 200),
     (2, 150),
     (1, 300),
     (3, 400),
     (2, 50),
-    (3, 100) ]
-```
+    (3, 100)
+]
 
-
-## 💡OUTPUT example
-```python
+Sample Output
 Processing transactions for Customer 1:
   - Transaction: (1, 200)
   - Transaction: (1, 300)
@@ -49,15 +61,14 @@ Running total of all transactions processed so far: [500, 200, 500]
 
 The highest amount is with Customer 1 and the amount is 500
 
-```
+Output Explanation
 
-## Output Explanation:
-Processing transactions for Customer X: Shows the beginning of processing for each customer.
+Processing transactions for Customer X indicates the start of processing for a specific customer.
 
-Transaction: Lists individual transactions (customer ID and amount).
+Transaction lines show individual transaction entries.
 
-Total amount for Customer X: Shows the total sum of all transactions for that customer.
+Total amount for Customer X displays the sum of all transactions for that customer.
 
-Running total of all transactions: Shows the cumulative total across all processed customers.
+Running total of all transactions shows the cumulative totals after each customer is processed.
 
-The highest amount: Finally, it identifies the customer with the highest total transaction amount.
+The final line identifies the customer with the highest total transaction amount
